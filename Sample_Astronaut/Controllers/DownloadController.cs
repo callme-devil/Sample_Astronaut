@@ -20,6 +20,11 @@ namespace Sample_Astronaut.Controllers
         //{
         //    return new JavascriptResult("alert(test)"); //
         //}
+
+        //public RedirectToActionResult Index()
+        //{
+        //    return RedirectToAction("Works", "Home");
+        //}
     }
 
     //public class JavascriptResult : ContentResult
