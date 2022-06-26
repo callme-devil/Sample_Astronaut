@@ -1,0 +1,31 @@
+﻿@using Sample_Astronaut.Models
+@model IEnumerable<Sample_Astronaut.Models.WorksViewModel>
+
+
+<div id="myCarousel" class="carousel slide projects-carousel">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="row">
+                @foreach (var work in Model)
+                {
+                    <div class="col-sm-4">
+
+                        <a href="#" title="" class="black-image-project-hover">
+                            <img src="~/assets/images/@work.Image" alt="@work.Name" class="img-responsive">
+                        </a>
+                        <div class="card-container card-container-lg">
+                            <h4>@work.Id</h4>
+                            <h3>@work.Name</h3>
+                            <p>@work.Description</p>
+                            <a href="#" title="" class="btn btn-default">Discover</a>
+                        </div>
+                    </div>
+                }
+
+            </div>
+            <!--/row-->
+        </div>
+        <!--/item-->
+    </div>
+</div>
