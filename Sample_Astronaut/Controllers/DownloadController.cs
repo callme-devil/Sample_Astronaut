@@ -13,7 +13,22 @@ namespace Sample_Astronaut.Controllers
         {
             var fileByte = System.IO.File.ReadAllBytes("wwwroot/ClickMe.txt");
             const string fileName = "ClickMe.txt"; //?can change Final file name
-            return File(fileByte, MediaTypeNames.Text.Plain , fileName); //! .Application.zip & .Application.Pdf 
+            return File(fileByte, MediaTypeNames.Text.Plain, fileName); //! .Application.zip & .Application.Pdf 
         }
+
+        //public JavascriptResult Index()
+        //{
+        //    return new JavascriptResult("alert(test)"); //
+        //}
     }
+
+    //public class JavascriptResult : ContentResult
+    //{
+    //    public JavascriptResult(string data)
+    //    {
+    //        Content = data;
+    //        ContentType = "application/javascript";
+    //    }
+    //! can use like something done some javascript code goes run Note: (configure needed in _Layout)
+    //}
 }

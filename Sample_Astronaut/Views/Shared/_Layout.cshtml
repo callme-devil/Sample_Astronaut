@@ -7,16 +7,17 @@
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <meta content="description" name="description">
     <meta name="google" content="notranslate" />
-    @RenderSection("SEO" , false)
+    @RenderSection("SEO", false)
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
-  
+
     <link rel="apple-touch-icon" sizes="180x180" href="~/assets/apple-icon-180x180.png">
     <link href="#" rel="icon">
 
-    <title>Title page</title>  
+    <title>Title page</title>
 
-    <link href="~/Css/main.css" rel="stylesheet"></head>
+    <link href="~/Css/main.css" rel="stylesheet">
+</head>
 <header>
     <nav class="navbar  navbar-fixed-top navbar-inverse">
         <div class="container">
@@ -33,14 +34,15 @@
                     <li><a asp-controller="Home" asp-action="Works">02 : Works</a></li>
                     <li><a asp-controller="Home" asp-action="Contact">03 : Contact</a></li>
                 </ul>
-            </div> 
+            </div>
         </div>
     </nav>
 </header>
 
-    @RenderBody()
-    
+@RenderBody()
+
 
 <script type="text/javascript" src="~/Js/main.js"></script>
-@RenderSection("Scripts" , false)
+@*<scrip type ="text/javascript" src="@Url.Action("Index","Download")"></scrip>*@
+@RenderSection("Scripts", false)
 
