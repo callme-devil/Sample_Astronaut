@@ -25,6 +25,15 @@ namespace Sample_Astronaut.Controllers
         //{
         //    return RedirectToAction("Works", "Home");
         //}
+
+        //public IActionResult Index()
+        //{
+        //    return new OkResult();
+        //    return new BadRequestResult();
+        //    return new NotFoundResult();
+        //    return new NoContentResult();
+        //?    return new StatusCodeResult(502); can manually enter status code
+        //}
     }
 
     //public class JavascriptResult : ContentResult
