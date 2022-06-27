@@ -19,9 +19,16 @@ namespace Sample_Astronaut.Controllers
         }
 
         [HttpPost]
-        public JsonResult Contact(ContactViewModel model)
+        public IActionResult Contact(ContactViewModel model)
         {
-            return Json(Ok());
+            if (!ModelState.IsValid)
+            {
+                ViewBag.error = "اطلاعات وارد شده صحیح نمیباشد , لطفا دوباره تلاش کنید";
+                return View(model);
+            }
+
+            ViewBag.Success = "پیغام شما با موفقیت ارسال شد باتشکر";
+            return View();
         }
 
         public IActionResult Works()
