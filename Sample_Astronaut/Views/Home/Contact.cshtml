@@ -37,6 +37,11 @@
                                         <span style="color: red" asp-validation-for="Subject"></span>
                                     </div>
                                     <div class="form-group">
+                                        <select class="custom-select" asp-items="Model.Contactors">
+                                            <option value="0" selected="selected">مخاطب مورد نظر را انتخاب کنید</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
                                         <textarea class="form-control" rows="5" placeholder="Enter your message" asp-for="Description"></textarea>
                                         <span style="color: red" asp-validation-for="Description"></span>
                                     </div>
