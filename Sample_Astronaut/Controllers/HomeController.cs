@@ -14,6 +14,7 @@ namespace Sample_Astronaut.Controllers
         [HttpGet]
         public IActionResult Contact()
         {
+            var Model = new ContactViewModel();
             return View();
         }
 
