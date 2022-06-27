@@ -11,9 +11,16 @@ namespace Sample_Astronaut.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult Contact()
         {
             return View();
+        }
+
+        [HttpPost]
+        public JsonResult Contact(ContactViewModel model)
+        {
+            return Json(Ok());
         }
 
         public IActionResult Works()
