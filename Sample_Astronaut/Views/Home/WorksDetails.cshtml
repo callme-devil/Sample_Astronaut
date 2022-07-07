@@ -1,0 +1,49 @@
+﻿@model Sample_Astronaut.Models.WorksViewModel
+@{
+    ViewData["Title"] = "جزئیات پروزه";
+}
+
+<div class="section-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-container-spacer text-center">
+                    <h1 class="h2">03 : Contact me</h1>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <td>Id</td>
+                                <td>Image</td>
+                                <td>Name</td>
+                                <td>Description</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>@Model.Id</td>
+                                <td><img src="~/assets/images/@Model.Image" width="100px"/></td>
+                                <td>@Model.Name</td>
+                                <td>@Model.Description</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<partial name="_Footer" />
+
+

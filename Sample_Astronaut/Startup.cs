@@ -47,6 +47,12 @@ namespace Sample_Astronaut
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            //! Convention Based Route (Secondary)
+            //app.UseEndpoints(endpoint =>
+            //{
+            //    endpoint.MapControllerRoute("Test", "{controller=Home}/{action=Contact}/{id?}"); // Custom Routing 
+            //});
         }
     }
 }

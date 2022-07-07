@@ -11,14 +11,14 @@
                 {
                     <div class="col-sm-4">
 
-                        <a href="#" title="" class="black-image-project-hover">
+                        <a asp-controller="Home" asp-action="WorksDetails" asp-route-id="@work.Id" title="" class="black-image-project-hover">
                             <img src="~/assets/images/@work.Image" alt="@work.Name" class="img-responsive">
                         </a>
                         <div class="card-container card-container-lg">
                             <h4>@work.Id</h4>
                             <h3>@work.Name</h3>
                             <p>@work.Description</p>
-                            <a href="#" title="" class="btn btn-default">Discover</a>
+                            <a asp-controller="Home" asp-action="WorksDetails" asp-route-id="@work.Id" title="" class="btn btn-default">Discover</a>
                         </div>
                     </div>
                 }
